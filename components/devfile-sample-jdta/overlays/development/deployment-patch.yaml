@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-jdta
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0008-tenant/tkrw-pr712-0075-0008-app/devfile-sample-jdta@sha256:73f190ccbb5ffd90953d95872246f1f81a5682ce495793a5bce33447ab4abfa5
+        name: my-nodejs
+        resources: {}
+status: {}
